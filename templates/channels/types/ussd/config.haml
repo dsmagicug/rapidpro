@@ -1,0 +1,20 @@
+-load i18n
+
+%h4
+  -blocktrans
+    As a last step you'll need to configure your USSD API to send requests to the API URL provided.
+
+%b
+  -trans "Make sure CGI parameters sent are correct."
+
+%pre
+  :escaped
+    ######################################################################
+    # {{channel.address}} - {{channel.org.name}} configs for
+    ######################################################################
+
+
+    Your USSD Service Code: {{channel.address}}
+    The endpoint URL on RapidPro: "https://{{ channel.callback_domain }}{% url 'courier.us' channel.uuid 'receive' %}?sessionID=%i&from=%p&ussdString=%b&messageID=%I&to=%P"
+   Where:
+    xxx blah
