@@ -15,6 +15,4 @@
 
 
     Your USSD Service Code: {{channel.address}}
-    The endpoint URL on RapidPro: "https://{{ channel.callback_domain }}{% url 'courier.us' channel.uuid 'receive' %}?sessionID=%i&from=%p&ussdString=%b&messageID=%I&to=%P"
-   Where:
-    xxx blah
+    The endpoint URL on RapidPro: "https://{{ channel.callback_domain }}{% url 'courier.us' channel.uuid 'receive' %}?sessionID=THE_SESSION_ID&from=SENDER&ussdString=THE_USSD_STRING&messageID=OPTIONAL_MESSAGE_ID&to=USSD_CODE"

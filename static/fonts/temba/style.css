@@ -659,6 +659,11 @@
 .icon-channel-kannel:before {
   content: "\e608";
 }
+
+.icon-channel-ussd:before {
+  content: "\ef0f7";
+}
+
 .icon-video:before {
   content: "\e609";
 }

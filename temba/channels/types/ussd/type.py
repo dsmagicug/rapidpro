@@ -16,7 +16,7 @@ class USSDType(ChannelType):
 
 	courier_url = r"^us/(?P<uuid>[a-z0-9\-]+)/(?P<action>status|receive)$"
 
-	name = "Kannel"
+	name = "USSD"
 	icon = "icon-channel-ussd"
 
 	claim_blurb = _(
