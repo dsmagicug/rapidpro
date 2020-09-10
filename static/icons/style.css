@@ -757,6 +757,10 @@
 .icon-channel-kannel:before {
   content: "\e608";
 }
+
+.icon-channel-ussd:before {
+  content: "\f0f8";
+}
 .icon-video:before {
   content: "\e609";
 }

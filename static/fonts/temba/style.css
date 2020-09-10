@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'temba';
-  src:  url('fonts/temba.eot?f77vj9');
-  src:  url('fonts/temba.eot?f77vj9#iefix') format('embedded-opentype'),
-    url('fonts/temba.ttf?f77vj9') format('truetype'),
-    url('fonts/temba.woff?f77vj9') format('woff'),
-    url('fonts/temba.svg?f77vj9#temba') format('svg');
+  src:  url('fonts/temba.eot?auvldh');
+  src:  url('fonts/temba.eot?auvldh#iefix') format('embedded-opentype'),
+    url('fonts/temba.ttf?auvldh') format('truetype'),
+    url('fonts/temba.woff?auvldh') format('woff'),
+    url('fonts/temba.svg?auvldh#temba') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13,7 +13,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'temba' !important;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -25,49 +25,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-email-tickets:before {
-  content: "\ea35";
-}
-.icon-ticket:before {
-  content: "\e939";
-}
-.icon-zendesk:before {
-  content: "\e918";
-}
-.icon-two-factor:before {
-  content: "\e916";
-  color: #8f8f8f;
-}
-.icon-prometheus:before {
-  content: "\e915";
-}
-.icon-global:before {
-  content: "\ea2f";
-}
-.icon-freshchat:before {
-  content: "\e913";
-}
-.icon-bothub:before {
-  content: "\e901";
-}
-.icon-chip:before {
-  content: "\e911";
-}
-.icon-luis:before {
-  content: "\e90f";
-}
-.icon-wit:before {
-  content: "\e910";
-}
-.icon-thinq:before {
-  content: "\e902";
-}
-.icon-whatsapp:before {
-  content: "\ea93";
-}
-.icon-wechat:before {
-  content: "\ea94";
-}
 .icon-circle-2:before {
   content: "\e000";
 }
@@ -590,7 +547,7 @@
 .icon-channel-plivo:before {
   content: "\e0d1";
 }
-.icon-dtone:before {
+.icon-transfertodtone:before {
   content: "\e0d2";
 }
 .icon-phone2:before {
@@ -659,11 +616,6 @@
 .icon-channel-kannel:before {
   content: "\e608";
 }
-
-.icon-channel-ussd:before {
-  content: "\f0f8";
-}
-
 .icon-video:before {
   content: "\e609";
 }
@@ -678,6 +630,15 @@
 }
 .icon-public:before {
   content: "\e80b";
+}
+.icon-vk:before {
+  content: "\e900";
+}
+.icon-bothub:before {
+  content: "\e901";
+}
+.icon-thinq:before {
+  content: "\e902";
 }
 .icon-telegram:before {
   content: "\e903";
@@ -709,8 +670,44 @@
 .icon-junebug:before {
   content: "\e90c";
 }
+.icon-signalwire:before {
+  content: "\e90d";
+}
 .icon-fcm:before {
   content: "\e90e";
+}
+.icon-luis:before {
+  content: "\e90f";
+}
+.icon-wit:before {
+  content: "\e910";
+}
+.icon-chip:before {
+  content: "\e911";
+}
+.icon-stack-text:before {
+  content: "\e912";
+}
+.icon-freshchat:before {
+  content: "\e913";
+}
+.icon-mtarget:before {
+  content: "\e914";
+}
+.icon-prometheus:before {
+  content: "\e915";
+}
+.icon-two-factor:before {
+  content: "\e916";
+}
+.icon-shopping-bag:before {
+  content: "\e917";
+}
+.icon-zendesk:before {
+  content: "\e918";
+}
+.icon-ticket:before {
+  content: "\e939";
 }
 .icon-headphones:before {
   content: "\e948";
@@ -718,27 +715,27 @@
 .icon-attachment:before {
   content: "\e9cd";
 }
+.icon-at-sign:before {
+  content: "\ea2f";
+}
+.icon-mailbox:before {
+  content: "\ea35";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-wechat:before {
+  content: "\ea94";
+}
 .icon-volume-medium:before {
   content: "\ed90";
+}
+.icon-arrow-up:before {
+  content: "\edc7";
 }
 .icon-docs-2:before {
   content: "\f0f7";
 }
-.icon-signalwire:before {
-  content: "\e90d";
-}
-.icon-template:before {
-  content: "\e912";
-}
-.icon-arrow-up51:before {
-  content: "\edc7";
-}
-.icon-mtarget:before {
-  content: "\e914";
-}
-.icon-vk:before {
-  content: "\e900";
-}
-.icon-shopping-bag:before {
-  content: "\e917";
+.icon-channel-ussd:before {
+  content: "\f0f8";
 }
