@@ -21,7 +21,6 @@ class ClaimView(ClaimViewMixin, SmartFormView):
 		country = forms.ChoiceField(
 			choices=ALL_COUNTRIES, label=_("Country"), help_text=_("The country this phone number is used in")
 		)
-
 		start_message = forms.CharField(
 			max_length=64,
 			required=False,
@@ -29,7 +28,6 @@ class ClaimView(ClaimViewMixin, SmartFormView):
 				"Optional message to send to rapidPro at session start"
 			),
 		)
-
 		timeout = forms.IntegerField(
 			initial=30,
 			required=False,
@@ -42,7 +40,14 @@ class ClaimView(ClaimViewMixin, SmartFormView):
 			label=_("Strip USSD Prefix in request"),
 			help_text=_("Use only if USSD gateway concatenates responses to subsequent requests "),
 		)
-
+		push_url = forms.URLField(
+			initial='https://',
+			max_length=1024,
+			required=False,
+			help_text=_(
+				"If the USSD Agregator supports PUSH (a.k.a application-originated sessions), set this to the URL where messages are sent"
+			),
+		)
 	form_class = USSDClaimForm
 
 	def form_valid(self, form):
@@ -54,6 +59,7 @@ class ClaimView(ClaimViewMixin, SmartFormView):
 		number = data["number"]
 		start_message = data["start_message"]
 		country = data["country"]
+		push_url = data['push_url']
 
 		role = Channel.ROLE_SEND + Channel.ROLE_RECEIVE
 
@@ -63,6 +69,7 @@ class ClaimView(ClaimViewMixin, SmartFormView):
 			Channel.CONFIG_USSD_TIMEOUT_KEY: timeout,
 			Channel.CONFIG_USSD_STRIP_PREFIX_KEY: strip_prefix,
 			Channel.CONFIG_CALLBACK_DOMAIN: org.get_brand_domain(),
+			Channel.CONFIG_USSD_PUSH_URL_KEY: push_url
 		}
 		self.object = Channel.add_config_external_channel(
 			org, self.request.user, country, number, "US", config, role=role, parent=None

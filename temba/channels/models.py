@@ -286,9 +286,10 @@ class Channel(TembaModel):
     CONFIG_NEXMO_APP_ID = "nexmo_app_id"
     CONFIG_NEXMO_APP_PRIVATE_KEY = "nexmo_app_private_key"
 
-    CONFIG_USSD_START_MSG_KEY = "start_msg"
-    CONFIG_USSD_TIMEOUT_KEY = "time_out"
-    CONFIG_USSD_STRIP_PREFIX_KEY = "strip_prefix"
+    CONFIG_USSD_START_MSG_KEY = "ussd_start_msg"
+    CONFIG_USSD_TIMEOUT_KEY = "ussd_request_time_out"
+    CONFIG_USSD_STRIP_PREFIX_KEY = "ussd_strip_prefix"
+    CONFIG_USSD_PUSH_URL_KEY = "ussd_push_url"
 
     CONFIG_SHORTCODE_MATCHING_PREFIXES = "matching_prefixes"
 
